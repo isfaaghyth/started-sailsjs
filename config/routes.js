@@ -39,6 +39,10 @@ module.exports.routes = {
       controller:"UsersController",
       action:"getData"
    },
+   'POST /newpost': {
+      controller:"PostsController",
+      action:"newPost"
+   },
 
 
   /***************************************************************************

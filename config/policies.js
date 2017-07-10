@@ -19,6 +19,15 @@
 
 module.exports.policies = {
 
+   'UsersController': {
+       '*':'isAuthorized',
+       'userRegister': true, // We dont need authorization here, allowing public access
+       'userLogin': true, // We dont need authorization here, allowing public access
+   },
+   'PostsController':{
+      '*':'isAuthorized'
+   }
+
   /***************************************************************************
   *                                                                          *
   * Default policy for all controllers and actions (`true` allows public     *

@@ -21,6 +21,9 @@ module.exports = {
      },
      password: {
         type: 'string'
+     },
+     token: {
+        type: 'string'
      }
   }
 };

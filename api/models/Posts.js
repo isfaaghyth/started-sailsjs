@@ -13,6 +13,9 @@ module.exports = {
          primaryKey: true,
          autoIncrement: true
      },
+     user_id: {
+        type: 'integer'
+     },
      title: {
          type: 'string'
      },
